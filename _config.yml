@@ -1,0 +1,14 @@
+# Site settings
+title: pixl8news
+email: hello@pixl8news.com
+description: > # this means to ignore newlines until "baseurl:"
+  Video games are a part of our lives . We live, breathe, dream, and even create
+  video games. We are inspired and our lives are rejuvenated through the 
+  experiences we live through gaming medium.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://pixl8news.github.io" # the base hostname & protocol for your site
+twitter_username: pixl8news
+github_username:  pixl8news
+
+# Build settings
+markdown: kramdown
