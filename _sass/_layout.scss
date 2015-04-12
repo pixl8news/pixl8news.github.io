@@ -234,3 +234,26 @@
         }
     }
 }
+
+
+.feature-left {
+  @include outer-container;
+  .left { @include span-columns(12); }
+  .right { @include span-columns(12); }
+
+  @include media($large-screen) {
+    .left { @include span-columns(3); }
+    .right { @include span-columns(9); }
+  }
+}
+
+.feature-right {
+  @include outer-container;
+  .left { @include span-columns(12); }
+  .right { @include span-columns(12); }
+
+  @include media($large-screen) {
+    .left { @include span-columns(9); }
+    .right { @include span-columns(3); }
+  }
+}
