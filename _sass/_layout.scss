@@ -235,6 +235,167 @@
     }
 }
 
+.hero {
+  $hero-backround-url: '/img/landing-page-background.jpg';
+
+  @include background(linear-gradient(black, transparent 50%), url($hero-backround-url) top left no-repeat white scroll);
+
+  min-height: 30em;
+
+  color: white;
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 0px $spacing-unit;
+    padding-top: $spacing-unit;
+
+    @include media-query($large-screen) {
+        font-size: 28px;
+    }
+  }
+
+  h2 {
+    color: $brand-color;
+    font-size: 24px;
+    padding: 0px $spacing-unit;
+
+    @include media-query($large-screen) {
+        font-size: 18px;
+    }
+  }
+
+  p {
+    padding: 0px $spacing-unit;
+  }
+}
+
+.kickstarter {
+  $kickstarter-backround-url: '/img/keyboard-macbook.jpg';
+
+  @include outer-container;
+
+  @include background(linear-gradient(black, transparent 50%), url($kickstarter-backround-url) center no-repeat white scroll);
+
+  min-height: 15em;
+
+  color: white;
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0px $spacing-unit;
+    padding-top: $spacing-unit;
+
+    @include media-query($large-screen) {
+        font-size: 28px;
+    }
+  }
+
+  h2 {
+    color: $brand-color;
+    font-size: 24px;
+    padding: 0px $spacing-unit;
+
+    @include media-query($large-screen) {
+        font-size: 18px;
+    }
+  }
+
+  p {
+    padding: 0px $spacing-unit;
+  }
+
+  input {
+    @include span-columns(7);
+    @include shift(1);
+  }
+
+  button {
+    @include span-columns(3);
+  }
+}
+
+.how-it-works {
+  @include outer-container;
+
+  .title {
+    @include span-columns(12);
+    text-align: center;
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      padding: 0px $spacing-unit;
+      padding-top: $spacing-unit;
+
+      @include media-query($large-screen) {
+          font-size: 28px;
+      }
+    }
+  }
+
+  .bullet-point {
+    @include span-columns(12);
+    text-align: center;
+
+    image {
+
+    }
+
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      padding: 0px $spacing-unit / 2;
+      padding-top: $spacing-unit / 2;
+    }
+  }
+
+  @include media($large-screen) {
+    .bullet-point { @include span-columns(4); }
+  }
+}
+
+.meet-the-team {
+  @include outer-container;
+
+  .title {
+    @include span-columns(12);
+    text-align: center;
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      padding: 0px $spacing-unit;
+      padding-top: $spacing-unit;
+
+      @include media-query($large-screen) {
+          font-size: 28px;
+      }
+    }
+  }
+
+  .team-member {
+    @include span-columns(12);
+    text-align: center;
+
+    image {
+
+    }
+
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      padding: 0px $spacing-unit / 2;
+      padding-top: $spacing-unit / 2;
+    }
+  }
+
+  @include media($large-screen) {
+    .team-member { @include span-columns(4); }
+  }
+}
 
 .feature-left {
   @include outer-container;
