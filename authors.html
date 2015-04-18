@@ -1,0 +1,9 @@
+---
+layout: default
+permalink: authors/
+---
+
+{% assign authors = site.authors | where:"visible",true %}
+{% for author in authors %}
+  {% include author-overview.html %}
+{% endfor %}

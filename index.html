@@ -36,21 +36,12 @@ layout: default
   <section>
     <div class="meet-the-team">
       <div class="title"><h1>Meet the Team</h1></div>
-      <div class="team-member">
-        <img src="http://placehold.it/200/200"/>
-        <h1>Brandon</h1>
-        <p>Founder & Business Development</p>
-      </div>
-      <div class="team-member">
-        <img src="http://placehold.it/200/200"/>
-        <h1>Norm</h1>
-        <p>Project Development</p>
-      </div>
-      <div class="team-member">
-        <img src="/img/tricorius-portrait.png"/>
-        <h1>Curtis</h1>
-        <p>Web Design & Development</p>
-      </div>
+      <ul>
+      {% assign authors = site.authors | where:"featured",true | sort: "sort-order" %}
+      {% for author in authors %}
+        {% include team-member.html %}
+      {% endfor %}
+      </ul>
     </div>
   </section>
 

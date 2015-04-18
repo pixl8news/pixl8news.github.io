@@ -364,6 +364,7 @@
 
   .title {
     @include span-columns(12);
+    @include omega();
     text-align: center;
 
     h1 {
@@ -394,10 +395,49 @@
       padding: 0px $spacing-unit / 2;
       padding-top: $spacing-unit / 2;
     }
-  }
 
-  @include media($large-screen) {
-    .team-member { @include span-columns(4); }
+    .social-icons {
+      @include media($large-screen) {
+        float: right;
+      }
+
+      ul.footer-social {
+        margin: 1em 0 0 0;
+
+        @include media($large-screen) {
+          float: right;
+          margin-top: 0;
+        }
+
+        li {
+          font-size: 1.6em;
+          float: left;
+          line-height: 0;
+          margin: 0;
+          padding-right: 0.5em;
+          display: inline-block;
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+
+        a {
+          color: transparentize($grey-color-dark, 0.6);
+          text-decoration: none;
+
+          &:focus,
+          &:hover {
+            color: transparentize($grey-color-dark, 0);
+          }
+        }
+      }
+    }
+
+    @include media($large-screen) {
+      @include span-columns(4);
+      @include omega(3n);
+    }
   }
 }
 

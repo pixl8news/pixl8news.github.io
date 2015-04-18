@@ -1,0 +1,39 @@
+<li class="team-member">
+  <a href="{{ author.url }}"><img src="{{ author.portrait-url }}"/></a>
+  <a href="{{ author.url }}">
+    <h1>{% if author.pseudonym %}{{ author.pseudonym }}{% else %}{{ author.name }}{% endif %}</h1>
+  </a>
+  <p>{{ author.job-title }}</p>
+  <!-- 
+  <ul class="social-icons">
+    {% if author.email %}
+    <li class="social-icon">
+      <a href="mailto:{{ author.email }}">
+        <i class="fa fa-envelope-o"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% if author.github %}
+    <li class="social-icon">
+      <a href="https://github.com/{{ author.github }}">
+        <i class="fa fa-github"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% if author.twitter %}
+    <li class="social-icon">
+      <a href="https://twitter.com/{{ author.twitter }}">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% if author.battletag %}
+    <li class="social-icon">
+      <a href="https://pinboard.in/u:{{ author.battletag }}">
+        <i class="fa fa-globe"></i>
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+  -->
+</li>
