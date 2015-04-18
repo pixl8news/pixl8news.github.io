@@ -275,11 +275,9 @@
 
   @include outer-container;
 
-  @include background(linear-gradient(black, transparent 50%), url($kickstarter-backround-url) center no-repeat white scroll);
+//  @include background(linear-gradient(black, transparent 50%), url($kickstarter-backround-url) center no-repeat white scroll);
 
-  min-height: 15em;
-
-  color: white;
+  border-top: 1px solid $grey-color-light;
 
   h1 {
     font-size: 32px;
@@ -319,6 +317,8 @@
 
 .how-it-works {
   @include outer-container;
+
+  border-top: 1px solid $grey-color-light;
 
   .title {
     @include span-columns(12);
@@ -360,6 +360,8 @@
 .meet-the-team {
   @include outer-container;
 
+  border-top: 1px solid $grey-color-light;
+
   .title {
     @include span-columns(12);
     text-align: center;
@@ -380,8 +382,8 @@
     @include span-columns(12);
     text-align: center;
 
-    image {
-
+    img {
+      border-radius: 50%;
     }
 
     h1 {
