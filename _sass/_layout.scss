@@ -340,8 +340,8 @@
     @include span-columns(12);
     text-align: center;
 
-    image {
-
+    i {
+      font-size: 72px;
     }
 
     h1 {
@@ -383,6 +383,8 @@
     text-align: center;
 
     img {
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
     }
 
