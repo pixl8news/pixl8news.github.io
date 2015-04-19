@@ -1,7 +1,7 @@
 ---
 layout: page
 name: "Norm"
-portrait-url: "http://placehold.it/200/200"
+portrait-url: "/img/norm-portrait.png"
 job-title: "Project Development"
 visible: true
 featured: true
